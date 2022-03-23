@@ -1,0 +1,30 @@
+.flex {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+}
+
+.direction-row {
+    flex-direction: row;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.header-conteudo-meio{
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    height: 85px;
+}
