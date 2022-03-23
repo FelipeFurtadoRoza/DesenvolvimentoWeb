@@ -1,0 +1,37 @@
+table {
+    width: 600px;
+    border-spacing: 0px;
+    font-size: 12px;
+    margin: auto;
+    border: none;
+    font-family: Arial;
+    text-align: center;
+}
+th {
+    background-color: #78b200;
+}
+
+th {
+    color: white;
+    height: 50px;
+}
+
+td:nth-of-type(2) {
+    color: #0D5188;
+}
+tr:nth-of-type(odd) {
+    background-color: rgb(180, 178, 178);
+}
+
+.td-posicao {
+    width: 5%;
+}
+.td-quantitativo {
+    width: 15%;
+}
+
+th, td {
+    text-align: left;
+    font-size: 12px;
+
+}
