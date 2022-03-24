@@ -1,0 +1,14 @@
+{
+  "name": "calculadorajs",
+  "version": "1.0.0",
+  "description": "Aula de js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Felipe Furtado Roza",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
