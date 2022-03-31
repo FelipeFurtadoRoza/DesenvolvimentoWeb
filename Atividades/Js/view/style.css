@@ -1,0 +1,11 @@
+section {
+    width: 100%;
+}
+#calculo {
+    border: 1px solid black;
+    height: 400px;
+    width: 50%;
+    float: left;
+    margin-left: 25%;
+    margin-top: 5%;
+}

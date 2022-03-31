@@ -1,8 +1,4 @@
-import { soma, subtracao, multiplicacao, divisao, delta } from './calculadora';
-// const soma = require('./soma')
-// const subtracao = require('./subtracao')
-// const multiplicacao = require('./multiplicacao')
-// const divisao = require('./divisao')
+import { soma, subtracao, multiplicacao, divisao, delta, bas } from './calculadora';
 
 it('Soma de dois numeros positivos diferentes', () => {
     expect(soma(2,2)).toBe(4)
@@ -25,7 +21,11 @@ it('divisao de dois numeros positivos e negativos', () => {
 })
 
 it('divisao de dois numeros positivos e negativos', () => {
-    expect(delta(3,7,2)).toBe(25)
+    expect(delta(2,8,-24)).toBe(256)
+})
+
+it('divisao de dois numeros positivos e negativos', () => {
+    expect(bas(256,2,8)).toMatchObject({x1:2,x2:-6})
 })
 
 //npm i babel-jest @babel/preset-env

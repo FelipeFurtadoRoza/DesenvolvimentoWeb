@@ -21,13 +21,14 @@ function delta(a, b, c) {
         return {x1: 'Inexistente', x2: 'Inexistente'};
     } else {
         return delta;
-        //bas(delta, a, b);
     }
 }
 
 function bas(delta, a, b) {
-    var x1 = (-b + (Math.sqrt(delta))) / 2*a;
-    var x2 = (-b - (Math.sqrt(delta))) / 2*a;
+    var x1 = (-b + (Math.sqrt(delta))) / (2*a);
+    var x2 = (-b - (Math.sqrt(delta))) / (2*a);
+
+    return {x1, x2};
 }
 
-export { soma, subtracao, multiplicacao, divisao, delta }
+export { soma, subtracao, multiplicacao, divisao, delta, bas }
