@@ -27,7 +27,7 @@ function delta(a, b, c) {
 function bas(delta, a, b) {
     var x1 = (-b + (Math.sqrt(delta))) / (2*a);
     var x2 = (-b - (Math.sqrt(delta))) / (2*a);
-
+    console.log(x1,x2);
     return {x1, x2};
 }
 
