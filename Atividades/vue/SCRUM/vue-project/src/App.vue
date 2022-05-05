@@ -1,7 +1,7 @@
 <template>
     <div class="board">
         <div class="coluna">
-            <Coluna v-for="issue in issuesBacklog" :key="issue.id" :issue="issue"/>
+            <Coluna v-for="issue in issuesBacklog" :key="issue.id" :issue="issue" @moveBacklog="moveBacklog"/>
         </div>
         <div class="coluna">
             <Coluna v-for="issue in issuesToDo" :key="issue.id" :issue="issue"/>
@@ -37,6 +37,13 @@
             }
         },
         components: { Coluna },
+
+        methods: {
+            moveBacklog(idLoko) {
+                this.issuesToDo.push({id: this.issuesBacklog[idLoko].id, conteudo: this.issuesBacklog[idLoko].conteudo, tags: this.issuesBacklog[idLoko].tags})
+                this.issuesBacklog.splice(idLoko);
+            }
+        },
     };
 </script>
 

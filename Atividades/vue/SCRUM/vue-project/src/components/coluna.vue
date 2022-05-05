@@ -9,6 +9,9 @@
                         {{tag}}
                     </p>
                 </div>
+                <div>
+                    <button v-on:click="$emit('moveBacklog', issue.id)"></button>
+                </div>
             </section>
         </ul>
     </div>
@@ -20,7 +23,6 @@
         props: {
             issue: {
                 type: Object,
-                default: [],
             },
         },
     }
