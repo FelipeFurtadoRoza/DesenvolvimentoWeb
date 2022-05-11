@@ -9,8 +9,14 @@
                         {{tag}}
                     </p>
                 </div>
-                <div>
-                    <button v-on:click="$emit('moveBacklog', issue.id)"></button>
+                <div v-if="issue.idArray == 'issuesBacklog'">
+                    <button v-on:click="$emit('moveBacklog', issue.id, issue.idArray)"></button>
+                </div>
+                <div v-else-if="issue.idArray == 'issuesToDo'">
+                    <button v-on:click="$emit('moveBacklog', issue.id, issue.idArray)"></button>
+                </div>
+                <div v-else-if="issue.idArray == 'issuesDoing'">
+                    <button v-on:click="$emit('moverTras', issue.id, issue.idArray)"></button>
                 </div>
             </section>
         </ul>
@@ -25,6 +31,7 @@
                 type: Object,
             },
         },
+        emits: ['moveBacklog', 'moverTras']
     }
 </script>
 
